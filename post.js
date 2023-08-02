@@ -7,6 +7,7 @@ async function logRequestBody(request) {
   console.log("Request Headers:", headersString);
   const body = await clone.text();
   console.log("Request Body:", body);
+  onsole.log("Time:", Date.now());
   return request;
 }
 (function () {
